@@ -1468,6 +1468,15 @@
 		3AC648B2129E146500C3EB25 /* EditingBoundary.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AC648B1129E146500C3EB25 /* EditingBoundary.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		3C244FEAA375AC633F88BE6F /* RenderLayerModelObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C244FE4A375AC633F88BE6F /* RenderLayerModelObject.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		3C244FEBA375AC633F88BE6F /* RenderLayerModelObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C244FE5A375AC633F88BE6F /* RenderLayerModelObject.cpp */; };
+		3E087F311BF4A8CE00310F01 /* AudioDestinationDaw.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3E087F2C1BF4A8CE00310F01 /* AudioDestinationDaw.cpp */; settings = {ASSET_TAGS = (); }; };
+		3E087F341BF4A8CE00310F01 /* AudioDestinationDaw.h in Headers */ = {isa = PBXBuildFile; fileRef = 3E087F2D1BF4A8CE00310F01 /* AudioDestinationDaw.h */; settings = {ASSET_TAGS = (); }; };
+		3E087F371BF4A8CE00310F01 /* DawStateSingleton.h in Headers */ = {isa = PBXBuildFile; fileRef = 3E087F2E1BF4A8CE00310F01 /* DawStateSingleton.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		3E087F381BF4A8CE00310F01 /* DawStateSingleton.h in Headers */ = {isa = PBXBuildFile; fileRef = 3E087F2E1BF4A8CE00310F01 /* DawStateSingleton.h */; settings = {ASSET_TAGS = (); }; };
+		3E087F391BF4A8CE00310F01 /* DawStateSingleton.h in Headers */ = {isa = PBXBuildFile; fileRef = 3E087F2E1BF4A8CE00310F01 /* DawStateSingleton.h */; settings = {ASSET_TAGS = (); }; };
+		3E087F3A1BF4A8CE00310F01 /* DawStateSingleton.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3E087F2F1BF4A8CE00310F01 /* DawStateSingleton.mm */; settings = {ASSET_TAGS = (); }; };
+		3E087F3D1BF4A8CE00310F01 /* IAudioRenderOutput.h in Headers */ = {isa = PBXBuildFile; fileRef = 3E087F301BF4A8CE00310F01 /* IAudioRenderOutput.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		3E087F3E1BF4A8CE00310F01 /* IAudioRenderOutput.h in Headers */ = {isa = PBXBuildFile; fileRef = 3E087F301BF4A8CE00310F01 /* IAudioRenderOutput.h */; settings = {ASSET_TAGS = (); }; };
+		3E087F3F1BF4A8CE00310F01 /* IAudioRenderOutput.h in Headers */ = {isa = PBXBuildFile; fileRef = 3E087F301BF4A8CE00310F01 /* IAudioRenderOutput.h */; settings = {ASSET_TAGS = (); }; };
 		3F2B33EB165AF15600E3987C /* DOMWebKitCSSViewportRule.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F2B33E6165AF15500E3987C /* DOMWebKitCSSViewportRule.h */; };
 		3F2B33EC165AF15600E3987C /* DOMWebKitCSSViewportRule.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3F2B33E7165AF15500E3987C /* DOMWebKitCSSViewportRule.mm */; };
 		3F2B33ED165AF15600E3987C /* DOMWebKitCSSViewportRuleInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F2B33E8165AF15500E3987C /* DOMWebKitCSSViewportRuleInternal.h */; };
@@ -8841,6 +8850,11 @@
 		3AC648B1129E146500C3EB25 /* EditingBoundary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditingBoundary.h; sourceTree = "<group>"; };
 		3C244FE4A375AC633F88BE6F /* RenderLayerModelObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RenderLayerModelObject.h; sourceTree = "<group>"; };
 		3C244FE5A375AC633F88BE6F /* RenderLayerModelObject.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RenderLayerModelObject.cpp; sourceTree = "<group>"; };
+		3E087F2C1BF4A8CE00310F01 /* AudioDestinationDaw.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AudioDestinationDaw.cpp; sourceTree = "<group>"; };
+		3E087F2D1BF4A8CE00310F01 /* AudioDestinationDaw.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioDestinationDaw.h; sourceTree = "<group>"; };
+		3E087F2E1BF4A8CE00310F01 /* DawStateSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DawStateSingleton.h; sourceTree = "<group>"; };
+		3E087F2F1BF4A8CE00310F01 /* DawStateSingleton.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = DawStateSingleton.mm; sourceTree = "<group>"; };
+		3E087F301BF4A8CE00310F01 /* IAudioRenderOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IAudioRenderOutput.h; sourceTree = "<group>"; };
 		3F2B33E3165ABD3500E3987C /* WebKitCSSViewportRule.idl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = WebKitCSSViewportRule.idl; sourceTree = "<group>"; };
 		3F2B33E6165AF15500E3987C /* DOMWebKitCSSViewportRule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DOMWebKitCSSViewportRule.h; sourceTree = "<group>"; };
 		3F2B33E7165AF15500E3987C /* DOMWebKitCSSViewportRule.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = DOMWebKitCSSViewportRule.mm; sourceTree = "<group>"; };
@@ -16408,6 +16422,18 @@
 				37DDCDA31384501C0008B793 /* MHTMLParser.h */,
 			);
 			path = mhtml;
+			sourceTree = "<group>";
+		};
+		3E087F2B1BF4A8CE00310F01 /* daw */ = {
+			isa = PBXGroup;
+			children = (
+				3E087F2C1BF4A8CE00310F01 /* AudioDestinationDaw.cpp */,
+				3E087F2D1BF4A8CE00310F01 /* AudioDestinationDaw.h */,
+				3E087F2E1BF4A8CE00310F01 /* DawStateSingleton.h */,
+				3E087F2F1BF4A8CE00310F01 /* DawStateSingleton.mm */,
+				3E087F301BF4A8CE00310F01 /* IAudioRenderOutput.h */,
+			);
+			path = daw;
 			sourceTree = "<group>";
 		};
 		4150F9ED12B6E0990008C860 /* shadow */ = {
@@ -24357,6 +24383,7 @@
 			children = (
 				CD0EEE0D14743E48003EAFA2 /* ios */,
 				FD3160B012B0270700C1A359 /* mac */,
+				3E087F2B1BF4A8CE00310F01 /* daw */,
 				FD31604412B026F700C1A359 /* AudioArray.h */,
 				FD31604512B026F700C1A359 /* AudioBus.cpp */,
 				FD31604612B026F700C1A359 /* AudioBus.h */,
@@ -24554,6 +24581,7 @@
 				53ED3FDF167A88E7006762E6 /* JSInternalSettingsGenerated.h in Headers */,
 				A740B59514C935AB00A77FA4 /* JSMallocStatistics.h in Headers */,
 				CD5393D4175E018600C07123 /* JSMemoryInfo.h in Headers */,
+				3E087F381BF4A8CE00310F01 /* DawStateSingleton.h in Headers */,
 				A19AEA211AAA808600B52B25 /* JSMockContentFilterSettings.h in Headers */,
 				EBF5121D1696496C0056BD25 /* JSTypeConversions.h in Headers */,
 				CB8CF01D1A95DE42000D510B /* MicroTaskTest.h in Headers */,
@@ -24562,6 +24590,7 @@
 				A1B5B29F1AAA846F008B6042 /* MockContentFilterSettings.h in Headers */,
 				2D97F04819DD4140001EE9C3 /* MockPageOverlayClient.h in Headers */,
 				AA5F3B8D16CC33D100455EB0 /* PlatformSpeechSynthesizerMock.h in Headers */,
+				3E087F3E1BF4A8CE00310F01 /* IAudioRenderOutput.h in Headers */,
 				41815C1F138319830057AAA4 /* WebCoreTestSupport.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -24570,6 +24599,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E087F3D1BF4A8CE00310F01 /* IAudioRenderOutput.h in Headers */,
+				3E087F371BF4A8CE00310F01 /* DawStateSingleton.h in Headers */,
 				FE115FAB167988CD00249134 /* AbstractDatabaseServer.h in Headers */,
 				41E1B1D10FF5986900576B3B /* AbstractWorker.h in Headers */,
 				29A8122E0FBB9C1D00510293 /* AccessibilityARIAGridCell.h in Headers */,
@@ -27493,6 +27524,7 @@
 				97BC6A421505F081001B74AC /* SQLResultSet.h in Headers */,
 				97BC6A451505F081001B74AC /* SQLResultSetRowList.h in Headers */,
 				FE8A674816CDD19E00930BF8 /* SQLStatement.h in Headers */,
+				3E087F341BF4A8CE00310F01 /* AudioDestinationDaw.h in Headers */,
 				97BC6A491505F081001B74AC /* SQLStatementCallback.h in Headers */,
 				97BC6A4B1505F081001B74AC /* SQLStatementErrorCallback.h in Headers */,
 				97BC6A501505F081001B74AC /* SQLTransaction.h in Headers */,
@@ -28244,6 +28276,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E087F391BF4A8CE00310F01 /* DawStateSingleton.h in Headers */,
+				3E087F3F1BF4A8CE00310F01 /* IAudioRenderOutput.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -30003,6 +30037,7 @@
 				6EBF0E7612A9868800DB1709 /* JSOESTextureFloat.cpp in Sources */,
 				3146FE7418442370001A937C /* JSOESTextureFloatLinear.cpp in Sources */,
 				A31C4E5216E02B08002F7957 /* JSOESTextureHalfFloat.cpp in Sources */,
+				3E087F311BF4A8CE00310F01 /* AudioDestinationDaw.cpp in Sources */,
 				31078CC91880AAC9008099DC /* JSOESTextureHalfFloatLinear.cpp in Sources */,
 				77A17AA612F28B2A004E02F6 /* JSOESVertexArrayObject.cpp in Sources */,
 				FDF6BAF8134A4C9800822920 /* JSOfflineAudioCompletionEvent.cpp in Sources */,
@@ -30532,6 +30567,7 @@
 				A81872240977D3C0005826D9 /* NameNodeList.cpp in Sources */,
 				8306EFF11B8BCEA50031D032 /* NativeNodeFilter.cpp in Sources */,
 				E10B9B6D0B747599003ED890 /* NativeXPathNSResolver.cpp in Sources */,
+				3E087F3A1BF4A8CE00310F01 /* DawStateSingleton.mm in Sources */,
 				93CCF0600AF6CA7600018E89 /* NavigationAction.cpp in Sources */,
 				979F43D31075E44A0000F83B /* NavigationScheduler.cpp in Sources */,
 				A9C6E5A50D746458006442E9 /* Navigator.cpp in Sources */,

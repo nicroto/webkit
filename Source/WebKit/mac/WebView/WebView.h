@@ -28,11 +28,14 @@
 
 #import <Foundation/Foundation.h>
 
+#import <AudioUnit/AudioUnit.h>
+
 #if !TARGET_OS_IPHONE
 #import <AppKit/AppKit.h>
 #else
 #import <WebKitLegacy/WAKAppKitStubs.h>
 #import <WebKitLegacy/WAKView.h>
+
 #if !defined(IBAction)
 #define IBAction void
 #endif
@@ -205,6 +208,25 @@ extern NSString *WebViewProgressFinishedNotification;
     @result Returns an initialized WebView.
 */
 - (instancetype)initWithFrame:(NSRect)frame frameName:(NSString *)frameName groupName:(NSString *)groupName;
+
+// tsenkov debugger;
+/*!
+    @method initWithFrame:samplingRate:frameName:groupName:
+    @abstract The designated initializer for WebView.
+    @discussion Initialize a WebView with the supplied parameters. This method will 
+    create a main WebFrame with the view. Passing a top level frame name is useful if you
+    handle a targetted frame navigation that would normally open a window in some other 
+    way that still ends up creating a new WebView.
+    @param frame The frame used to create the view.
+    @param samplingRate The expected sampling rate for audio.
+    @param frameName The name to use for the top level frame. May be nil.
+    @param groupName The name of the webView set to which this webView will be added.  May be nil.
+    @result Returns an initialized WebView.
+*/
+- (instancetype)initWithFrame:(NSRect)frame samplingRate:(float)samplingRate frameName:(NSString *)frameName groupName:(NSString *)groupName;
+- (void)setDawSamplingRate:(float)samplingRate;
+- (void)renderAudio:(int) numberOfFrames bufferList:(AudioBufferList*) bufferList;
+
 
 /*!
     @method close

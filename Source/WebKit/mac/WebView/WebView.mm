@@ -113,6 +113,8 @@
 #import <JavaScriptCore/APICast.h>
 #import <JavaScriptCore/Exception.h>
 #import <JavaScriptCore/JSValueRef.h>
+// tsenkov debugger;
+#import <WebCore/DawStateSingleton.h>
 #import <WebCore/AlternativeTextUIController.h>
 #import <WebCore/AnimationController.h>
 #import <WebCore/ApplicationCacheStorage.h>
@@ -5014,6 +5016,33 @@ static bool needsWebViewInitThreadWorkaround()
     WebCoreThreadViolationCheckRoundTwo();
     return [self _initWithFrame:f frameName:frameName groupName:groupName];
 }
+
+
+// tsenkov debugger;
+- (instancetype)initWithFrame:(NSRect)frame samplingRate:(float)samplingRate frameName:(NSString *)frameName groupName:(NSString *)groupName
+{
+    auto& dawState = DawStateSingleton::getInstance();
+    dawState.setSamplingRate( samplingRate );
+
+#if !PLATFORM(IOS)
+    if (needsWebViewInitThreadWorkaround())
+        return [[self _webkit_invokeOnMainThread] initWithFrame:frame frameName:frameName groupName:groupName];
+#endif
+
+    WebCoreThreadViolationCheckRoundTwo();
+    return [self _initWithFrame:frame frameName:frameName groupName:groupName];
+}
+- (void)setDawSamplingRate:(float)samplingRate
+{
+    auto& dawState = DawStateSingleton::getInstance();
+    dawState.setSamplingRate( samplingRate );
+}
+- (void)renderAudio:(int) numberOfFrames bufferList:(AudioBufferList*) bufferList
+{
+    auto& dawState = DawStateSingleton::getInstance();
+    dawState.audioOutput()->render(numberOfFrames, bufferList);
+}
+
 
 #if !PLATFORM(IOS)
 - (instancetype)initWithCoder:(NSCoder *)decoder

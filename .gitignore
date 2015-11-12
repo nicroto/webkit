@@ -6,6 +6,7 @@
 .directory
 build/
 /WebKitBuild/
+/DerivedData/
 autoinstall.cache.d
 project.xcworkspace
 xcuserdata
