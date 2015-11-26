@@ -40,7 +40,8 @@
 
 - (void)awakeFromNib
 {
-    _webView = [[WebView alloc] initWithFrame:[containerView bounds] frameName:nil groupName:@"MiniBrowser"];
+//    _webView = [[WebView alloc] initWithFrame:[containerView bounds] frameName:nil groupName:@"MiniBrowser"];
+    _webView = [[WebView alloc] initWithFrame:[containerView bounds] samplingRate:44100 frameName:nil groupName:@"MiniBrowser"];
     [_webView setAutoresizingMask:(NSViewWidthSizable | NSViewHeightSizable)];
 
     [_webView setFrameLoadDelegate:self];
